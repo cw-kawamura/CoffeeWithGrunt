@@ -1,4 +1,4 @@
-ApplicationWindow(title) ->
+ApplicationWindow = (title) ->
 	self = Ti.UI.createWindow
 		title:title,
 		backgroundColor:'white'
@@ -20,6 +20,6 @@ ApplicationWindow(title) ->
 		)
 	)
 	
-	return self;
+	return self
 
 module.exports = ApplicationWindow;

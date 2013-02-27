@@ -1,6 +1,7 @@
 (function() {
+  var ApplicationWindow;
 
-  ApplicationWindow(title)(function() {
+  ApplicationWindow = function(title) {
     var button, self;
     self = Ti.UI.createWindow({
       title: title,
@@ -20,7 +21,7 @@
       }));
     });
     return self;
-  });
+  };
 
   module.exports = ApplicationWindow;
 

@@ -13,12 +13,15 @@ In app.js, we generally take care of a few things:
 
 (function() {
 
+  this.Util = require('lib/Util');
+
   (function() {
     var ApplicationTabGroup, Window, height, isTablet, osname, version, width;
     osname = Ti.Platform.osname;
     version = Ti.Platform.version;
     height = Ti.Platform.displayCaps.platformHeight;
     width = Ti.Platform.displayCaps.platformWidth;
+    Util.alert('test');
     isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
     if (isTablet) {
       Window = require('ui/tablet/ApplicationWindow');

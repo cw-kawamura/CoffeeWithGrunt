@@ -9,6 +9,9 @@ In app.js, we generally take care of a few things:
  - Require and open our top-level UI component
   
 ###
+
+@Util = require 'lib/Util'
+
 # This is a single context application with mutliple windows in a stack
 do ->
 	# determine platform and form factor and render approproate components
@@ -16,7 +19,8 @@ do ->
 	version = Ti.Platform.version
 	height = Ti.Platform.displayCaps.platformHeight
 	width = Ti.Platform.displayCaps.platformWidth
-
+	
+	Util.alert('test')
 	# considering tablet to have one dimension over 900px - this is imperfect, so you should feel free to decide
 	# yourself what you consider a tablet form factor for android
 	isTablet = osname == 'ipad' or (osname == 'android' and (width > 899 || height > 899))
