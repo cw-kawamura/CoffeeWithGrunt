@@ -9,11 +9,6 @@ In app.js, we generally take care of a few things:
  - Require and open our top-level UI component
   
 ###
-
-# bootstrap and check dependencies
-if Ti.version < 1.8
-	alert 'Sorry - this application template requires Titanium Mobile SDK 1.8 or later'
-
 # This is a single context application with mutliple windows in a stack
 do ->
 	# determine platform and form factor and render approproate components

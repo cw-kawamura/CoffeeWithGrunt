@@ -1,0 +1,23 @@
+{
+  "name": "CoffeeWithGrunt",
+  "version": "0.0.1",
+  "description": "CoffeeScriptとGruntのテストです",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-coffee": "~0.4.1",
+    "grunt-contrib-watch": "~0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://masaplabs@github.com/masaplabs/CoffeeWithGrunt.git"
+  },
+  "author": "Masafumi Kawamura",
+  "license": "BSD",
+  "gitHead": "51abac23407b3fdb4c9f9fb93c5b7e188aeb46f7",
+  "readmeFilename": "README"
+}

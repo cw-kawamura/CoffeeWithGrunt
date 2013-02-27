@@ -13,10 +13,6 @@ In app.js, we generally take care of a few things:
 
 (function() {
 
-  if (Ti.version < 1.8) {
-    alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
-  }
-
   (function() {
     var ApplicationTabGroup, Window, height, isTablet, osname, version, width;
     osname = Ti.Platform.osname;
